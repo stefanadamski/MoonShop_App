@@ -1,0 +1,100 @@
+.product_screen {
+  max-width: 1300px;
+  margin: 1rem auto;
+  display: flex;
+  font-family: 'Stick No Bills', sans-serif;
+}
+
+.product_screen_left {
+  display: flex;
+  flex: 0.8;
+  width: 100%;
+}
+
+.left_info {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.2);
+  margin: 1rem;
+  height: fit-content;
+  width: 100%;
+  font-size: 0.9rem;
+  border-radius: 13px;
+  color: white;
+}
+
+.left_name {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.left_info > p,
+.right_info > p {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.left_info > p:last-child,
+.right_info > p:last-child {
+  border: none;
+}
+
+.product_screen_right {
+  flex: 0.2;
+  opacity: 0.7;
+}
+
+.right_info {
+  width: 250px;
+  margin: 1rem;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  border-radius: 13px;
+}
+
+.right_info p {
+  padding: 1rem;
+  font-size: 0.8rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.right_info p > button {
+  grid-column: 1/-1;
+  width: 100%;
+  padding: 10px 16px;
+  background: #171717;
+  color: #f4f4f4;
+  border: 1px solid #171717;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.right_info select {
+  padding: 10px 16px;
+  font-family: 'Stick No Bills', sans-serif;
+}
+
+@media (max-width: 960px) {
+  .product_screen {
+    flex-direction: column;
+  }
+
+  .product_screen_left {
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .left_info {
+    flex: 1;
+  }
+
+  .product_screen__right {
+    flex: 1;
+    padding: 1rem;
+  }
+
+  .right_info {
+    width: 100%;
+    margin: 0;
+  }
+}

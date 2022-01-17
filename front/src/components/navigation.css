@@ -1,0 +1,93 @@
+.navbar {
+  width: 100%;
+  background-color: transparent;
+  font-family: 'Stick No Bills', sans-serif;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  z-index: 50;
+}
+
+.navbar_logo h2 {
+  color: white;
+  text-shadow: 0 0 20px white;
+  font-family: 'Stick No Bills', sans-serif;
+  font-size: 60px;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.navbar_links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar_links > li {
+  padding-left: 1.5rem;
+}
+
+.navbar_links > li > a {
+  text-decoration: none;
+  color: #f4f4f4;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbar_links > li > a > span {
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.cart_link {
+  background: transparent;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+
+
+.cart_link:hover {
+  border: 1px solid white;
+  color: #f4f4f4;
+}
+
+.cart_music {
+  font-size: 1.2rem;
+  color: #9932CC;
+  text-shadow: 0 0 3px #9932CC;
+}
+
+.cart_music:hover {
+  color: violet;
+  cursor: pointer;
+  border: 1px solid violet;
+  text-shadow: 0 0 3px violet;
+}
+.cart_logo_icon {
+  width: 30px;
+  height: 30px;
+  background-color: #f4f4f4;
+  border-radius: 50%;
+  margin-left: 8px;
+  color: #171717;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar_links > li {
+    padding-left: 0;
+  }
+
+}

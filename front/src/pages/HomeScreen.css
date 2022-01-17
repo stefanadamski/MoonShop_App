@@ -1,0 +1,13 @@
+.journey_screen {
+  max-width: 1300px;
+  margin: 1rem auto;
+}
+
+.journey_products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+
