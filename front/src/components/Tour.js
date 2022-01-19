@@ -1,7 +1,7 @@
 import "./tour.css";
 import { Link } from "react-router-dom";
 
-const Tour = ({ imageUrl, description, price, name, productId }) => {
+const Tour = ({  description, price, name, productId }) => {
   return (
     <div className="product">
 

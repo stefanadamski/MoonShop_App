@@ -52,7 +52,6 @@ const Tours = () => {
             ))
           )}
         </div>
-
         <div className="cart_screen_right">
           <div className="cart_screen_info">
             <p>Subtotal ({getCartCount()}) items</p>

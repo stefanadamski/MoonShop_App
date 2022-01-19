@@ -4,6 +4,7 @@ const CART_INITIAL_STATE = {
   cartItems: [],
 };
 
+
 export const cartReducer = (state = CART_INITIAL_STATE, action) => {
   switch (action.type) {
     case actionTypes.ADD_TO_CART:
